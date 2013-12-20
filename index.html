@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html ng-app="progressApp">
+    <head>
+        <title>Bootstrap Progress bar with text</title>
+
+        <link rel="stylesheet" href="bootstrap.css" />
+        <link rel="stylesheet" href="styles.css" />
+        <script type="text/javascript" src="jquery.js"></script>
+        <script type="text/javascript" src="angular.js"></script>
+        <script type="text/javascript" src="bootstrap.js"></script>
+        <script type="text/javascript" src="app.js"></script>
+        <script type="text/javascript" src="directive.js"></script>
+
+    </head>
+    <body>
+        <div ng-controller="progressController">
+            <wat-progress percent="thewidth" text="progressLabel"></wat-progress>
+
+            <label>% Remaining:</label>
+            <input type="text" ng-model="thewidth">
+            <label>% State:</label>
+            <input type="text" ng-model="fluidicsState">
+            <label>% Time Remaining:</label>
+            <input type="text" ng-model="remainingtime">
+        </div>
+    </body>
+</html>
